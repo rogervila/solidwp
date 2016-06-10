@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+
+{% block body %}
+
+    <h1>Blog</h1>
+    <hr>
+
+    {% include 'components/menu.html' %}
+
+	{# format the $posts array as you need it from the controller, then output here the data #}
+	<pre>
+		{{ print_r(posts) }}
+	</pre>
+
+{% endblock %}

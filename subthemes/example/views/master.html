@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description }}">
+
+	<link rel="shortcut icon" href="{{ path('assets/img/favicon.ico') }}">
+
+	{{ wp_head() }}
+
+	{# Resetize, a css reset that I created long time ago  #}
+	<link rel="stylesheet" href="http://rogervila.github.io/resetize/css/resetize.min.css">
+	<link rel="stylesheet" href="{{ path('assets/dist/app.css') }}">
+	
+	{% block head %}{% endblock %}
+</head>
+
+<body>
+	{% block body %}{% endblock %}
+
+	{% block footer %}{% endblock %}
+
+	{% include 'components/footer.html' %}
+
+	{{ wp_footer() }}
+</body>
+
+</html>

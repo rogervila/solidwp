@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+
+{% block body %}
+    <h1>Home</h1>
+    <hr>
+
+	{% include 'components/menu.html' %}
+	
+
+	<form method="POST" action="{{ url('email/contact') }}">
+		<input type="text" name="prueba" placeholder="Write anything here and test post routes">
+		<input type="submit" name="enviar">
+	</form>
+
+{% endblock %}

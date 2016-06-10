@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+/bower_components
+/subthemes/example/vendor
+/subthemes/example/node_modules
+/subthemes/example/bower_components
+.DS_Store
